@@ -4,9 +4,17 @@ class Person
     @age = age
   end
 
+  def getAge
+    return @age if @age
+  end
+
   def display_info
     puts "Name: #{@name}"
     puts "Age: #{@age}"
+  end 
+
+  def update_age(age)
+    @age = age 
   end 
 
   def greet
